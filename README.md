@@ -6,3 +6,26 @@ This project implement Deep Maximum Entropy Markov Models (DMEMM) for the target
   1. Deep Maximum Entropy Markov Model with randomly initialized embedding.
   2. Deep Maximum Entropy Markov Model with pretrained Word2Vec embedding.
   3. Bi-LSTM Maximum Entropy Markov Model with randomly initialized/pretrained Word2Vec embeddings.
+
+
+# Train and test one of three models:
+Train a model, this involves running main.py:
+  1. Deep Maximum Entropy Markov Model with randomly initialized embedding:
+
+```
+python main.py --train_file data/twitter1_train.txt --test_file data/twitter1_test.txt --test_predictions_file data/test_predictions.csv --option 1
+
+```
+  2. Deep Maximum Entropy Markov Model with pretrained Word2Vec embedding. You may have to develop a pretrained Word2Vec embedding by yourself:
+
+```
+python main.py --train_file data/twitter1_train.txt --test_file data/twitter1_test.txt --test_predictions_file data/test_predictions.csv --option 2
+
+```
+  3. Bi-LSTM Maximum Entropy Markov Model with randomly initialized/pretrained Word2Vec embeddings：
+
+```
+python main.py --train_file data/twitter1_train.txt --test_file data/twitter1_test.txt --test_predictions_file data/test_predictions.csv --option 3
+
+```
+
